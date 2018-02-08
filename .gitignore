@@ -1,4 +1,8 @@
-Library/
-obj/
-Temp/
-*.swp
+/*
+/*/
+
+!.gitignore
+!README.md
+
+!/Assets/
+!/ProjectSettings/
