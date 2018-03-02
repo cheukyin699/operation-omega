@@ -2,10 +2,14 @@ fileFormatVersion: 2
 guid: c2a45b05cc6aef84bba63144b3626cf5
 folderAsset: yes
 <<<<<<< HEAD
+<<<<<<< HEAD
 timeCreated: 1520014969
 =======
 timeCreated: 1518715414
 >>>>>>> Adds more scripts and an actual floor
+=======
+timeCreated: 1518715414
+>>>>>>> refs/remotes/origin/master
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
