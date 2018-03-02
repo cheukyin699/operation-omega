@@ -635,7 +635,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 5287dea4-f0c6-4c62-964d-d904665314c7
-  projectName: Operation Omega (1)
+  projectName: Operation Omega
   organizationId: cheuk-yin-ng
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
