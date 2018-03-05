@@ -6,3 +6,6 @@
 
 !/Assets/
 !/ProjectSettings/
+
+# Blender backups
+*.blend[0-9]
