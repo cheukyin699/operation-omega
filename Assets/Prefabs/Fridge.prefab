@@ -82,6 +82,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4600354483219138}
   - component: {fileID: 95959752907553652}
+  - component: {fileID: 65586517778302218}
   m_Layer: 0
   m_Name: Fridge
   m_TagString: Untagged
@@ -208,9 +209,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1657462975272196}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.39, y: -1.52, z: 5.53}
+  m_LocalScale: {x: 0.09446445, y: 0.13206184, z: 0.13206184}
   m_Children:
   - {fileID: 4168733403195318}
   - {fileID: 4285164247879202}
@@ -218,7 +219,7 @@ Transform:
   - {fileID: 4592321558107814}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &4609831895314134
 Transform:
   m_ObjectHideFlags: 1
@@ -287,6 +288,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1626501083337014}
   m_Mesh: {fileID: 4300000, guid: 6f5e52c68965972428ba77b4a86726bd, type: 3}
+--- !u!65 &65586517778302218
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1657462975272196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.267824, y: 7.868529, z: 4.902109}
+  m_Center: {x: -0.025397347, y: 4.655004, z: -0.021357358}
 --- !u!95 &95959752907553652
 Animator:
   serializedVersion: 3

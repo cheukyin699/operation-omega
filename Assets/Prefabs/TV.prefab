@@ -35,6 +35,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4314650537902940}
   - component: {fileID: 95589982325452484}
+  - component: {fileID: 65165390212040952}
   m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
@@ -93,15 +94,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1170385087888498}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -4.0098, y: -1.03, z: 0.64587814}
+  m_LocalScale: {x: 24.611599, y: 24.611584, z: 24.611584}
   m_Children:
   - {fileID: 4734619072330848}
   - {fileID: 4571554084801630}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4571554084801630
 Transform:
   m_ObjectHideFlags: 1
@@ -109,8 +110,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1542337199578524}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0023927456, y: 0.03349494, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0024, y: 0.0401, z: 0.0019}
+  m_LocalScale: {x: 1.4211583, y: 1.4211584, z: 1.4211584}
   m_Children: []
   m_Father: {fileID: 4314650537902940}
   m_RootOrder: 1
@@ -170,6 +171,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1542337199578524}
   m_Mesh: {fileID: 4300000, guid: 767e917e30d453144a502bba9bfffecd, type: 3}
+--- !u!65 &65165390212040952
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1170385087888498}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13915989, y: 0.07853066, z: 0.004336573}
+  m_Center: {x: 0.0020608255, y: 0.041780528, z: 0.0019798472}
 --- !u!95 &95589982325452484
 Animator:
   serializedVersion: 3
