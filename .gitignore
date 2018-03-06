@@ -3,9 +3,13 @@
 
 !.gitignore
 !README.md
+!README.pdf
 
 !/Assets/
 !/ProjectSettings/
+
+!*.png
+!*.jpg
 
 # Blender backups
 *.blend[0-9]

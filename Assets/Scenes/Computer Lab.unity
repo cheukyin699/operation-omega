@@ -1747,7 +1747,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4600354483219138, guid: f9297139506d1a2439f3161d4f1ce6ae, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.52
+      value: -1.57
       objectReference: {fileID: 0}
     - target: {fileID: 4600354483219138, guid: f9297139506d1a2439f3161d4f1ce6ae, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3621,6 +3621,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 2.4125047
       objectReference: {fileID: 0}
+    - target: {fileID: 1802984917478020, guid: 55c8d65d416a6ac4bbf5e0232ca5e87b, type: 2}
+      propertyPath: m_Name
+      value: Phone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55c8d65d416a6ac4bbf5e0232ca5e87b, type: 2}
   m_IsPrefabParent: 0
@@ -5329,6 +5333,22 @@ Transform:
   m_PrefabParentObject: {fileID: 4141934410377724, guid: 79afdb3904aebd44ab537bd186bfe89f,
     type: 2}
   m_PrefabInternal: {fileID: 1803449770}
+--- !u!1 &1822629509 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1688933062573906, guid: 3039c1079ec8433459435226bc9709ef,
+    type: 2}
+  m_PrefabInternal: {fileID: 1871142020}
+--- !u!114 &1822629510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1822629509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e758a019afa0244794e7258e16509b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1824678799
 Prefab:
   m_ObjectHideFlags: 0
@@ -5579,7 +5599,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1688933062573906, guid: 3039c1079ec8433459435226bc9709ef, type: 2}
       propertyPath: m_Name
-      value: computerlab
+      value: Computer Lab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3039c1079ec8433459435226bc9709ef, type: 2}

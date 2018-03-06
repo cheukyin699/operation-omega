@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5c6e47a123bfa074abbce8655153bcef
+guid: 3ecafec6a89affa49bf49e346d0f3ca5
 timeCreated: 1520030973
 licenseType: Free
 ModelImporter:
@@ -21,12 +21,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Ceiling__ceiling-pattern_png
-    second: {fileID: 2100000, guid: ea46fa1f4991c5741832f030f78361d9, type: 2}
+    second: {fileID: 2100000, guid: 64c5c6e82f4d86e4ea165d9413288478, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Floor
-    second: {fileID: 2100000, guid: 354378c4b3e57e9449df2faa7f8a27eb, type: 2}
+    second: {fileID: 2100000, guid: 3d42288cd5aa36143bc7183b553ad8e3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
