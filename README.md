@@ -3,20 +3,6 @@
 This is the entire Unity project folder for the project. Here are some notable
 files for marking and clarity:
 
-## Rendered Environment Images
-
-```
-CMPT[1-4].png
-IT[1-2].png
-SEC[1-2].png
-```
-
-These are the rendered images of the environment.
-
-- **CMPT**: Computer Lab
-- **IT**: IT Department
-- **SEC**: Security Post
-
 ## Rendered Animations
 
 ```
@@ -26,13 +12,18 @@ Animation.mp4
 This is the rendered walking animation for two (one unused) of the human(oid)
 models.
 
-## Updated Drawings
+## Drawings and Renders
 
 ```
-[NEW].*.png
+RenderedImages/*.png
+RenderedImages/*.jpg
 ```
 
-These (This) is the updated sketch for models.
+These are the updated drawings and renders for the project. Preliminary, of course.
+
+- **CMPT**: Computer Lab
+- **IT**: IT Department
+- **SEC**: Security Post
 
 ## Other Assets
 

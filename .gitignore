@@ -7,9 +7,7 @@
 
 !/Assets/
 !/ProjectSettings/
-
-!*.png
-!*.jpg
+!/RenderedImages/
 
 # Blender backups
 *.blend[0-9]
