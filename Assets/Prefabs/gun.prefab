@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4953702325066104}
   - component: {fileID: 33243115176216602}
   - component: {fileID: 23265732096546720}
+  - component: {fileID: 65391535533139758}
   m_Layer: 0
   m_Name: gun
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1831387435067282}
   m_LocalRotation: {x: -0, y: 0.42387566, z: -0, w: 0.9057204}
-  m_LocalPosition: {x: -1.65, y: -1.481, z: 4.743}
+  m_LocalPosition: {x: -1.875, y: -1.467, z: 4.47}
   m_LocalScale: {x: 2.1434834, y: 2.1434834, z: 2.1434834}
   m_Children: []
   m_Father: {fileID: 0}
@@ -58,6 +59,7 @@ MeshRenderer:
   - {fileID: 2100000, guid: 290cfaef348c3c44195ba2228d8d3c54, type: 3}
   - {fileID: 2100002, guid: 290cfaef348c3c44195ba2228d8d3c54, type: 3}
   - {fileID: 2100004, guid: 290cfaef348c3c44195ba2228d8d3c54, type: 3}
+  - {fileID: 2100000, guid: 14a076797205eb849a4143ffffb7e2b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,3 +86,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1831387435067282}
   m_Mesh: {fileID: 4300000, guid: 290cfaef348c3c44195ba2228d8d3c54, type: 3}
+--- !u!65 &65391535533139758
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1831387435067282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09091074, y: 0.020000005, z: 0.06045098}
+  m_Center: {x: -0.010526554, y: 0.0000009979123, z: -0.0026746907}

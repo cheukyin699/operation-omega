@@ -351,5 +351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7132178de81f20c43a4cfb65181d92d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxDistance: 10
+  m_MaxDistance: 1
   m_GlowingMaterial: {fileID: 2100000, guid: 3dae6b9ef4212a449b671c9d074da7b7, type: 2}
+  m_NoneMaterial: {fileID: 2100000, guid: 14a076797205eb849a4143ffffb7e2b1, type: 2}

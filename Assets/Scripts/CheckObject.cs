@@ -5,18 +5,17 @@ using UnityEngine;
 
 public class CheckObject : MonoBehaviour {
 
-    private const int PLAYER_LAYER = 1 << 8;
-
     [SerializeField] private float m_MaxDistance = 0;
-    [SerializeField] private Material m_GlowingMaterial;
+    [SerializeField] private Material m_GlowingMaterial = null;
+    [SerializeField] private Material m_NoneMaterial = null;
 
     private Camera m_Camera;
-    private Material[] m_SeeingMaterials;
+    private Renderer[] m_SeeingRenders;
 
 	// Use this for initialization
 	void Start () {
         m_Camera = Camera.main;
-        m_SeeingMaterials = null;
+        m_SeeingRenders = null;
 
         // Sanity checking
         if (m_GlowingMaterial == null) {
@@ -26,23 +25,41 @@ public class CheckObject : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        // Raycast to any object
         RaycastHit hit;
         if (!Physics.Raycast (m_Camera.transform.position, m_Camera.transform.forward, out hit, m_MaxDistance)) {
             // Raycast doesn't hit anything
-            if (m_SeeingMaterials != null) {
-                // Remove the object's halo material
-                Array.Resize<Material> (ref m_SeeingMaterials, m_SeeingMaterials.Length - 1);
+            if (m_SeeingRenders != null) {
+                // Remove all the object's glowing material
+                for (int j = 0; j < m_SeeingRenders.Length; j++) {
+                    Material[] ms = m_SeeingRenders[j].materials;
+                    for (int i = 0; i < ms.Length; i++) {
+                        // Revert all glowing materials into 'null'
+                        if (ms [i].Equals(m_GlowingMaterial)) {
+                            ms [i] = m_NoneMaterial;
+                        }
+                    }
+                    m_SeeingRenders[j].materials = ms;
+                }
             }
         } else {
-            Renderer r = hit.collider.gameObject.GetComponent<Renderer> ();
-            Debug.Log (r.materials);
+            Renderer[] rs = hit.collider.gameObject.GetComponentsInChildren<Renderer> ();
 
-            if (r != null && m_SeeingMaterials != r.materials) {
-                // Material exists; increase material size
-                m_SeeingMaterials = r.materials;
-                Array.Resize<Material> (ref m_SeeingMaterials, m_SeeingMaterials.Length + 1);
-                // Add glowing material
-                m_SeeingMaterials[m_SeeingMaterials.Length - 1] = m_GlowingMaterial;
+            if (rs != null && m_SeeingRenders != rs) {
+                // Render exists; take it
+                m_SeeingRenders = rs;
+
+                // Do for every material in every render available...
+                for (int j = 0; j < rs.Length; j++) {
+                    Material[] ms = rs[j].materials;
+                    for (int i = 0; i < ms.Length; i++) {
+                        // Turn all non-existant materials into the glowing variant
+                        if (ms [i] == m_NoneMaterial) {
+                            ms [i] = m_GlowingMaterial;
+                        }
+                    }
+                    rs[j].materials = ms;
+                }
             }
         }
     }
