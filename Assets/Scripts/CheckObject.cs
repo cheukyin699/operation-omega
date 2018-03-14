@@ -2,11 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CheckObject : MonoBehaviour {
 
     [SerializeField] private float m_MaxDistance = 0;
     [SerializeField] private Material m_GlowingMaterial = null;
+    [SerializeField] private Text m_Overlay = null;
 
     private Camera m_Camera;
     private Renderer[] m_SeeingRenders;
@@ -20,20 +22,32 @@ public class CheckObject : MonoBehaviour {
         if (m_GlowingMaterial == null) {
             Debug.LogError ("Error: 'Glow Outline' material not found.");
         }
+        if (m_Overlay == null) {
+            Debug.LogError ("Error: Overlay not found; please assign it.");
+        }
 	}
 
     // Reverts existing game object back to the way God intended
     void Revert () {
         if (m_SeeingRenders != null) {
             // Remove all the object's glowing material
-            for (int j = 0; j < m_SeeingRenders.Length; j++) {
-                Material[] ms = m_SeeingRenders [j].materials;
+            for (int i = 0; i < m_SeeingRenders.Length; i++) {
+                Material[] ms = m_SeeingRenders [i].materials;
                 int last = ms.Length - 1;
                 ms [last] = null;
-                m_SeeingRenders [j].materials = ms;
+                m_SeeingRenders [i].materials = ms;
             }
             m_SeeingRenders = null;
+
+            // Reset overlay
+            m_Overlay.text = "";
         }
+    }
+
+    // Strips the name to bare bones
+    String StripName (String s) {
+        int ind = s.IndexOf (" (");
+        return ind < 0 ? s : s.Substring (0, ind);
     }
 	
 	// Update is called once per frame
@@ -54,12 +68,15 @@ public class CheckObject : MonoBehaviour {
                 m_SeeingRenders = rs;
 
                 // Do for every material in every render available...
-                for (int j = 0; j < rs.Length; j++) {
-                    Material[] ms = rs[j].materials;
+                for (int i = 0; i < rs.Length; i++) {
+                    Material[] ms = rs [i].materials;
                     int last = ms.Length - 1;
                     ms [last] = new Material(m_GlowingMaterial);
-                    rs [j].materials = ms;
+                    rs [i].materials = ms;
                 }
+
+                // Update overlay with information
+                m_Overlay.text = StripName(hit.collider.gameObject.name);
             }
         }
     }
