@@ -1,0 +1,18 @@
+{
+    "Gun": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF: This is a gun. Duh.",
+            "SELF: Can kill you instantly, hopefully."
+        ]
+    },
+    "TV": {
+        "type": "binary",
+        "effect": "none",
+        "dialog": [
+            "SELF: What a nice TV!",
+            "SELF: Wanna watch it?"
+        ]
+    }
+}
