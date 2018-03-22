@@ -1,5 +1,5 @@
 {
-    "Gun": {
+    "gun": {
         "type": "linear",
         "effect": "none",
         "dialog": [
@@ -7,7 +7,7 @@
             "SELF: Can kill you instantly, hopefully."
         ]
     },
-    "TV": {
+    "tv": {
         "type": "binary",
         "effect": "none",
         "dialog": [

@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4054972726698270}
   - component: {fileID: 65261709843706382}
   m_Layer: 0
-  m_Name: rollingchair
+  m_Name: chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

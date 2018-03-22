@@ -5,19 +5,26 @@ using SimpleJSON;
 
 public class Script
 {
+    public enum Type
+    {
+        NONE, LINEAR, BINARY
+    }
 
     private bool m_HasError = false;
     private string m_ErrorMessage = "";
 
-    private bool m_Type;
-    private string m_Effect;
+    public int pos;                                          // Index position in the script (what dialog you are on)
+    public Type type;
+    public string effect;
     private ArrayList m_Dialog;
 
     public Script (JSONNode n)
     {
-        m_Type = GetType (n);
-        m_Effect = GetEffect (n);
+        pos = 0;
+        Type = GetType (n);
+        effect = GetEffect (n);
         JSONArray a = GetDialog (n);
+        MakeDialog (a);
 
         // Log the last error
         if (m_HasError) {
@@ -25,24 +32,65 @@ public class Script
         }
     }
 
+    // Advances the dialog by one line
+    public void Advance ()
+    {
+        pos++;
+    }
+
+    // Advances the dialog by one line if there is a positive response
+    public void Advance (bool positive)
+    {
+        if (positive) {
+            pos++;
+        }
+    }
+
+    // Checks to see if we have reached the end of the dialog
+    public bool IsEOD ()
+    {
+        return pos >= m_Dialog.Count;
+    }
+
+    // Gets the current line. Short for `this[Pos]`.
+    public Line Get ()
+    {
+        return this[Pose];
+    }
+
+    // Resets the script
+    public void Reset ()
+    {
+        pos = 0;
+    }
+
+    public Line this[int i]
+    {
+        get {
+            return (Line) m_Dialog [i];
+        }
+    }
+
     // Returns true only if the type is binary
     // Returns false otherwise
-    private bool GetType (JSONNode n)
+    private Type GetType (JSONNode n)
     {
         if (!n ["type"].IsString) {
             m_HasError = true;
             m_ErrorMessage = "Missing 'type' from script";
             return false;
         }
+
+        // Only allow 2 types, and disallow the rest
         switch (n ["type"].Value) {
         case "linear":
-            return false;
+            return Type.LINEAR;
         case "binary":
-            return true;
+            return Type.BINARY;
         default:
             m_HasError = true;
             m_ErrorMessage = "Invalid type = '" + n ["type"] + "'";
-            return false;
+            return Type.NONE;
         }
     }
 
@@ -85,7 +133,7 @@ public class Script
                 m_HasError = true;
                 m_ErrorMessage = "Cannot find ':' in dialog '" + jar [i].Value + "'";
             } else {
-                m_Dialog [i] = jar [i].Value;
+                m_Dialog.Add(new Line (jar [i].Value));
             }
         }
     }

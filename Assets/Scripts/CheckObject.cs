@@ -10,16 +10,26 @@ public class CheckObject : MonoBehaviour
     [SerializeField] private Material m_GlowingMaterial = null;
     [SerializeField] private Text m_Overlay = null;
     [SerializeField] private TextAsset m_Dialog = null;
+    [SerializeField] private Text m_DialogText = null;
+    [SerializeField] private GameObject m_DialogPanel = null;
 
     private Camera m_Camera;
     private Renderer[] m_SeeingRenders;
+    // Temporary variable for storing object renders
     private ScriptManager m_SMan;
+    // Script manager
+    private string m_SelectedObject;
+    // Contains selected object ID
+    private Script m_SelectedScript;
+    // Selected object script
 
     // Use this for initialization
     void Start ()
     {
         m_Camera = Camera.main;
         m_SeeingRenders = null;
+        m_SelectedObject = "";
+        m_SelectedScript = null;
 
         // Sanity checking
         if (m_GlowingMaterial == null) {
@@ -29,6 +39,14 @@ public class CheckObject : MonoBehaviour
         if (m_Overlay == null) {
             // If you forgot to specify a text object
             Debug.LogError ("Error: Overlay not found; please assign it.");
+        }
+        if (m_DialogText == null) {
+            // If you forgot to specify a text object displaying the dialog
+            Debug.LogError ("Error: Dialog Text not found; please assign it.");
+        }
+        if (m_DialogPanel == null) {
+            // If you forgot to specify the dialog panel
+            Debug.LogError ("Error: Dialog Panel not found; please assign it.");
         }
 
         // Script management is also done here
@@ -51,15 +69,74 @@ public class CheckObject : MonoBehaviour
 
             // Reset overlay
             m_Overlay.text = "";
+            // Reset selection
+            m_SelectedObject = "";
         }
     }
 
     // Strips the name to bare bones
     // Removes all "duplicate" names
-    String StripName (String s)
+    string StripName (string s)
     {
         int ind = s.IndexOf (" (");
         return ind < 0 ? s : s.Substring (0, ind);
+    }
+
+    // Turns a name into an item id
+    string NameToID (string s)
+    {
+        return StripName (s).Replace (" ", "").ToLower ();
+    }
+
+    // Checks to see if player has selected an object
+    bool HasSelected ()
+    {
+        return m_SelectedObject != "";
+    }
+
+    // Checks to see if any dialog is active (i.e. you can see dialog on screen, currently)
+    bool HasActiveDialog ()
+    {
+        return m_SelectedScript != null;
+    }
+
+    // Updates active in-game dialog, if dialog is activated
+    void UpdateLine (Line l)
+    {
+        if (!m_DialogPanel.activeSelf) {
+            // If it isn't visible, make it visible!
+            m_DialogPanel.SetActive (true);
+        }
+
+        m_DialogText.text = l.ToString ();
+    }
+
+    // When you click, you check the object on your cursor
+    void HandleClick ()
+    {
+        if (HasSelected () && !HasActiveDialog ()) {
+            // No existing dialog - let's try and get some!
+            try {
+                m_SelectedScript = m_SMan [m_SelectedObject];
+                UpdateLine (m_SelectedScript.Get ());
+            } catch (Exception e) {
+                Debug.LogError (e.ToString ());
+            }
+        } else if (HasActiveDialog ()) {
+            // Already has active dialog - let's advance the dialog!
+            // TODO Check dialog type before advancing, and use the correct overload functions
+            ++m_SelectedScript.pos;
+            if (m_SelectedScript.IsEOD ()) {
+                // If we have reached the end of the dialog, delete the script
+                m_SelectedScript.Reset ();
+                m_SelectedScript = null;
+                // Hide the dialog window
+                m_DialogPanel.SetActive (false);
+            } else {
+                // If it is not the end, display it normally!
+                UpdateLine (m_SelectedScript.Get ());
+            }
+        }
     }
 	
     // Update is called once per frame
@@ -91,7 +168,15 @@ public class CheckObject : MonoBehaviour
 
                 // Update overlay with information (namely, the name of the game object
                 m_Overlay.text = StripName (hit.collider.gameObject.name);
+                // Update selected object with object ID
+                m_SelectedObject = NameToID (hit.collider.gameObject.name);
             }
+        }
+
+        // Check for mouse button input
+        if (Input.GetMouseButtonUp (0)) {
+            // Left-click to trigger
+            HandleClick ();
         }
     }
 }

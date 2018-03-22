@@ -8,7 +8,6 @@ public class ScriptManager {
     private Dictionary<string, Script> m_Dict;
 
     public bool Load (TextAsset t) {
-        Debug.Log (t.name);
         string text = t.text;
 
         JSONNode temp = JSON.Parse (text);
@@ -24,6 +23,13 @@ public class ScriptManager {
         if (!Load (ass)) {
             // Loading the file has failed
             Debug.LogError ("Error: cannot load the file");
+        }
+    }
+
+    public Script this[string id]
+    {
+        get {
+            return m_Dict [id];
         }
     }
 }
