@@ -21,7 +21,7 @@ public class Script
     public Script (JSONNode n)
     {
         pos = 0;
-        Type = GetType (n);
+        type = GetType (n);
         effect = GetEffect (n);
         JSONArray a = GetDialog (n);
         MakeDialog (a);
@@ -55,7 +55,7 @@ public class Script
     // Gets the current line. Short for `this[Pos]`.
     public Line Get ()
     {
-        return this[Pose];
+        return this[pos];
     }
 
     // Resets the script
@@ -78,7 +78,7 @@ public class Script
         if (!n ["type"].IsString) {
             m_HasError = true;
             m_ErrorMessage = "Missing 'type' from script";
-            return false;
+            return Type.NONE;
         }
 
         // Only allow 2 types, and disallow the rest
