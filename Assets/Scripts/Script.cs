@@ -10,6 +10,9 @@ public class Script
         NONE, LINEAR, BINARY
     }
 
+    public const string NO_EFFECT = "none";
+    public const string GAME_OVER = "game-over";
+
     private bool m_HasError = false;
     private string m_ErrorMessage = "";
 
@@ -50,6 +53,13 @@ public class Script
     public bool IsEOD ()
     {
         return pos >= m_Dialog.Count;
+    }
+
+    // Checks to see if we have reached the end of the dialog and need to choose an option
+    public bool NeedOptions ()
+    {
+        return type == Type.BINARY &&
+               pos  == m_Dialog.Count - 1;
     }
 
     // Gets the current line. Short for `this[Pos]`.

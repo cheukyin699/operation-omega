@@ -12,6 +12,7 @@ public class CheckObject : MonoBehaviour
     [SerializeField] private TextAsset m_Dialog = null;
     [SerializeField] private Text m_DialogText = null;
     [SerializeField] private GameObject m_DialogPanel = null;
+    [SerializeField] private GameObject m_OptionsPanel = null;
 
     private Camera m_Camera;
     private Renderer[] m_SeeingRenders;
@@ -21,7 +22,6 @@ public class CheckObject : MonoBehaviour
     private string m_SelectedObject;
     // Contains selected object ID
     private Script m_SelectedScript;
-    // Selected object script
 
     // Use this for initialization
     void Start ()
@@ -47,6 +47,10 @@ public class CheckObject : MonoBehaviour
         if (m_DialogPanel == null) {
             // If you forgot to specify the dialog panel
             Debug.LogError ("Error: Dialog Panel not found; please assign it.");
+        }
+        if (m_OptionsPanel == null) {
+            // If you forgot to specify the options panel
+            Debug.LogError ("Error: Optoins Panel not found; please assign it.");
         }
 
         // Script management is also done here
@@ -109,27 +113,55 @@ public class CheckObject : MonoBehaviour
         }
 
         m_DialogText.text = l.ToString ();
+
+        // Checks to see if you need to display binary decisions
+        m_OptionsPanel.SetActive (m_SelectedScript.NeedOptions ());
+    }
+
+    // Called whenever you make a decision. True values reflect affirmative (usually yes).
+    // False values reflect negative (usually no).
+    public void SelectOption (bool choice)
+    {
+        if (HasActiveDialog () && m_SelectedScript.NeedOptions ()) {
+            // Disable dialog panel
+            m_DialogPanel.SetActive(false);
+
+            // Check for effects
+            if (m_SelectedScript.effect != Script.NO_EFFECT) {
+                // If there are any effects, execute them
+                // TODO
+            } else {
+                // No effects. Move on. Nothing to see here.
+                m_SelectedScript.Reset ();
+                m_SelectedScript = null;
+            }
+        }
     }
 
     // When you click, you check the object on your cursor
+    // TODO use a kinect
     void HandleClick ()
     {
         if (HasSelected () && !HasActiveDialog ()) {
             // No existing dialog - let's try and get some!
             try {
                 m_SelectedScript = m_SMan [m_SelectedObject];
+
                 UpdateLine (m_SelectedScript.Get ());
             } catch (Exception e) {
                 Debug.LogError (e.ToString ());
             }
-        } else if (HasActiveDialog ()) {
+        } else if (HasActiveDialog () && m_SelectedScript.type == Script.Type.LINEAR) {
             // Already has active dialog - let's advance the dialog!
             // TODO Check dialog type before advancing, and use the correct overload functions
             ++m_SelectedScript.pos;
+
+            // Check for end of dialog
             if (m_SelectedScript.IsEOD ()) {
                 // If we have reached the end of the dialog, delete the script
                 m_SelectedScript.Reset ();
                 m_SelectedScript = null;
+
                 // Hide the dialog window
                 m_DialogPanel.SetActive (false);
             } else {

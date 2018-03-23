@@ -32,7 +32,7 @@ public class Line
         }
     }
 
-    public string ToString ()
+    public override string ToString ()
     {
         return m_Speaker + ": " + m_Dialog;
     }
