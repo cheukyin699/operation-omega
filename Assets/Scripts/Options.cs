@@ -19,8 +19,7 @@ public class Options : MonoBehaviour
 
         m_Callback = m_Player.GetComponent<CheckObject> ();
         if (m_Callback == null) {
-            Debug.LogError ("Error: CheckObject script not found on player. Maybe you forgot to get it?",
-                "You really have screwed up big this time. Like, how???");
+            Debug.LogError ("Error: CheckObject script not found on player. Maybe you forgot to get it?");
         }
     }
 
