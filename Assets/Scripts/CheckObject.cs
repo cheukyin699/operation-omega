@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CheckObject : MonoBehaviour
 {
@@ -126,15 +127,29 @@ public class CheckObject : MonoBehaviour
             // Disable dialog panel
             m_DialogPanel.SetActive(false);
 
-            // Check for effects
-            if (m_SelectedScript.effect != Script.NO_EFFECT) {
-                // If there are any effects, execute them
-                // TODO
-            } else {
-                // No effects. Move on. Nothing to see here.
-                m_SelectedScript.Reset ();
-                m_SelectedScript = null;
-            }
+            // Must call .DoCallback() in order to call callback, if that's what is warranted
+            m_SelectedScript.DoCallback (choice);
+            m_SelectedScript.Reset ();
+            m_SelectedScript = null;
+        }
+    }
+
+    // This is called whenever a non-trivial effect is executed
+    // Non-trivial effects are formated as follows:
+    //      effect:<data>
+    // Where `effect` is the effect id (string), and `<data>` is the corresponding data.
+    // Note the lack of spaces between the colon and the data.
+    void HandleEffect (string effect)
+    {
+        int colon = effect.IndexOf (':');
+        string name = effect.Substring (0, colon);
+        string data = effect.Substring (colon + 1);
+
+        switch (name) {
+        case "scene":
+            // Switch the active scene
+            SceneManager.LoadScene (data);
+            break;
         }
     }
 
@@ -146,19 +161,22 @@ public class CheckObject : MonoBehaviour
             // No existing dialog - let's try and get some!
             try {
                 m_SelectedScript = m_SMan [m_SelectedObject];
+                // Set the callback function
+                m_SelectedScript.callback = HandleEffect;
 
                 UpdateLine (m_SelectedScript.Get ());
             } catch (Exception e) {
                 Debug.LogError (e.ToString ());
             }
-        } else if (HasActiveDialog () && m_SelectedScript.type == Script.Type.LINEAR) {
+        } else if (HasActiveDialog ()) {
             // Already has active dialog - let's advance the dialog!
             // TODO Check dialog type before advancing, and use the correct overload functions
-            ++m_SelectedScript.pos;
+            m_SelectedScript.Advance ();
 
             // Check for end of dialog
-            if (m_SelectedScript.IsEOD ()) {
+            if (m_SelectedScript.IsEOD () && m_SelectedScript.type == Script.Type.LINEAR) {
                 // If we have reached the end of the dialog, delete the script
+                // Only delete the script if it is linear; don't if binary
                 m_SelectedScript.Reset ();
                 m_SelectedScript = null;
 

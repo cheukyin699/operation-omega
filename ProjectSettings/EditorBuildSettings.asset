@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Computer Lab.unity
+    guid: 54fdf5acc936dd548bf4423f70e074e8
+  - enabled: 1
+    path: Assets/Scenes/IT Office.unity
+    guid: bd9c3d8e2647db64f870a453f39d688a
+  - enabled: 1
+    path: Assets/Scenes/Security Office.unity
+    guid: 9ecf6dd8d379bd84882e93534d8aa7a4

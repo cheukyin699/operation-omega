@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SimpleJSON;
+using System;
 
 public class Script
 {
@@ -19,6 +20,7 @@ public class Script
     public int pos;                                          // Index position in the script (what dialog you are on)
     public Type type;
     public string effect;
+    public Action<string> callback;
     private ArrayList m_Dialog;
 
     public Script (JSONNode n)
@@ -39,13 +41,20 @@ public class Script
     public void Advance ()
     {
         pos++;
+        if (IsEOD () && type == Type.BINARY) {
+            // YOUR NOT DONE YET!!!
+            pos--;
+        }
+        // Can only callback if the script is linear
+        if (IsEOD () && type == Type.LINEAR && effect != NO_EFFECT) {
+            callback (effect);
+        }
     }
 
-    // Advances the dialog by one line if there is a positive response
-    public void Advance (bool positive)
+    public void DoCallback (bool yes)
     {
-        if (positive) {
-            pos++;
+        if (yes) {
+            callback (effect);
         }
     }
 

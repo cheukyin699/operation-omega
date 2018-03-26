@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33007776506160230}
   - component: {fileID: 23052469161842670}
   - component: {fileID: 64880023443290014}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Security Office
   m_TagString: Untagged
   m_Icon: {fileID: 0}

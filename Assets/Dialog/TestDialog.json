@@ -1,7 +1,7 @@
 {
     "gun": {
         "type": "linear",
-        "effect": "none",
+        "effect": "scene:Security Office",
         "dialog": [
             "SELF: This is a gun. Duh.",
             "SELF: Can kill you instantly, hopefully."
@@ -9,7 +9,7 @@
     },
     "tv": {
         "type": "binary",
-        "effect": "none",
+        "effect": "scene:IT Office",
         "dialog": [
             "SELF: What a nice TV!",
             "SELF: Wanna watch it?"
