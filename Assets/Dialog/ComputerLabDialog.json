@@ -26,7 +26,7 @@
     },
     "desktop": {
         "type": "linear",
-        "effect": "ring:phone",
+        "effect": "hear:phone",
         "dialog": [
             "SELF:Pretty high-end stuff, alright.",
             "P1:Yup. A professor is currently teaching a course on graphics and games - we were told to upgrade them. The students seem happy.",
@@ -44,7 +44,7 @@
     },
     "phone": {
         "type": "linear",
-        "effect": "show:pics",
+        "effect": "view:phone",
         "dialog": [
             "SELF:Hello? Hello?",
             "SELF:...",

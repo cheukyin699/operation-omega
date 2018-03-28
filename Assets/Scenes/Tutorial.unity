@@ -3289,7 +3289,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1718272839294318, guid: 81680eed58c462d4286a8c716d62681f, type: 2}
       propertyPath: m_Name
-      value: Corpse Body
+      value: Body
       objectReference: {fileID: 0}
     - target: {fileID: 1508105784471010, guid: 81680eed58c462d4286a8c716d62681f, type: 2}
       propertyPath: m_Name

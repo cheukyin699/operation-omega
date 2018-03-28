@@ -3,7 +3,7 @@
         "type": "binary",
         "effect": "autopsy:view",
         "dialog": [
-            "SELF:Hmm.... The Body is quite stiff.",
+            "SELF:Hmm.... The body is quite stiff.",
             "SELF:It seems that the suspected suicide occurred at least 6 hours ago.",
             "SELF:Nothing was moved.",
             "SELF:Oh! Something fell out!",
@@ -83,6 +83,22 @@
         "effect": "none",
         "dialog": [
             "SELF:It's unlocked."
+        ]
+    },
+    "tv": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:What a large TV this is.",
+            "SELF:What is it even used for? There's nothing to watch anyways - there's no box!"
+        ]
+    },
+    "monitor": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Dual monitors.",
+            "SELF:I heard from a friend that, the more monitors you had, the more professional you are at programming."
         ]
     },
     "securitycamera": {

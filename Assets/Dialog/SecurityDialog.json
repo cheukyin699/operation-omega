@@ -10,7 +10,7 @@
     },
     "monitor": {
         "type": "binary",
-        "effect": "watch:footage",
+        "effect": "view:footage",
         "dialog": [
             "SELF:Watch the footage back?"
         ]

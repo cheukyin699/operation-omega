@@ -106,14 +106,19 @@ public class CheckObject : MonoBehaviour
     }
 
     // Updates active in-game dialog, if dialog is activated
-    void UpdateLine (Line l)
+    void UpdateLine ()
+    {
+        UpdateLine (m_SelectedScript.Get ().ToString ());
+    }
+
+    void UpdateLine (string l)
     {
         if (!m_DialogPanel.activeSelf) {
             // If it isn't visible, make it visible!
             m_DialogPanel.SetActive (true);
         }
 
-        m_DialogText.text = l.ToString ();
+        m_DialogText.text = l;
 
         // Checks to see if you need to display binary decisions
         m_OptionsPanel.SetActive (m_SelectedScript.NeedOptions ());
@@ -150,6 +155,24 @@ public class CheckObject : MonoBehaviour
             // Switch the active scene
             SceneManager.LoadScene (data);
             break;
+        case "view":
+            // View some media, whether it be graphics or video format
+            switch (data) {
+            case "autopsy":
+            case "phone":
+                // Images are grouped together
+                // TODO
+                break;
+            case "footage":
+                // Videos are grouped together
+                // TODO
+                break;
+            }
+            break;
+        case "hear":
+            // Listen to some media, must be audio
+            // TODO
+            break;
         }
     }
 
@@ -164,7 +187,7 @@ public class CheckObject : MonoBehaviour
                 // Set the callback function
                 m_SelectedScript.callback = HandleEffect;
 
-                UpdateLine (m_SelectedScript.Get ());
+                UpdateLine ();
             } catch (Exception e) {
                 Debug.LogError (e.ToString ());
             }
@@ -184,7 +207,12 @@ public class CheckObject : MonoBehaviour
                 m_DialogPanel.SetActive (false);
             } else {
                 // If it is not the end, display it normally!
-                UpdateLine (m_SelectedScript.Get ());
+                if (m_SelectedScript.HasDelay ()) {
+                    UpdateLine (m_SelectedScript.Get ().Speaker + ":");
+                    Invoke ("UpdateLine", Script.DELAY);
+                } else {
+                    UpdateLine ();
+                }
             }
         }
     }

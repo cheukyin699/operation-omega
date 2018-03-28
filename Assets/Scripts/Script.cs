@@ -13,6 +13,7 @@ public class Script
 
     public const string NO_EFFECT = "none";
     public const string GAME_OVER = "game-over";
+    public const float DELAY = 1.0f;
 
     private bool m_HasError = false;
     private string m_ErrorMessage = "";
@@ -56,6 +57,12 @@ public class Script
         if (yes) {
             callback (effect);
         }
+    }
+
+    // Checks to see if the current line of dialog requires a delay "..."
+    public bool HasDelay ()
+    {
+        return Get ().Dialog == "...";
     }
 
     // Checks to see if we have reached the end of the dialog
