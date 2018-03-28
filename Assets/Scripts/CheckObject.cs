@@ -222,6 +222,7 @@ public class CheckObject : MonoBehaviour
     {
         // Raycast to any object
         RaycastHit hit;
+
         if (!Physics.Raycast (m_Camera.transform.position, m_Camera.transform.forward, out hit, m_MaxDistance)) {
             // Raycast doesn't hit anything
             Revert ();
