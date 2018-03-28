@@ -1,1 +1,36 @@
-{}
+{
+    "desk": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:All the stuff is gone now. There used to be a lot of stuff on it; it seemed to be used quite often.",
+            "SELF:There's a coffee-cup stain that cannot be rubbed off.",
+            "SELF:Poor guy. Looks like someone has finished moving his stuff out."
+        ]
+    },
+    "monitor": {
+        "type": "binary",
+        "effect": "watch:footage",
+        "dialog": [
+            "SELF:Watch the footage back?"
+        ]
+    },
+    "chair": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Quite a quaint little workspace. It looks empty.",
+            "SELF:With the small space, the guy could make it feel cozy and homey.",
+            "SELF:Instead, he went for the modern approach, and had the walls painted bland and sterile. Everything is chrome.",
+            "SELF:The only thing that pops out, as a result, is the conveniently-placed chair situated in the middle of the room."
+        ]
+    },
+    "door": {
+        "type": "binary",
+        "effect": "scene:IT Office",
+        "dialog": [
+            "SELF:I guess there's nothing more to see here.",
+            "SELF:Warning: about to leave this room. Are you sure you want to do this?"
+        ]
+    }
+}

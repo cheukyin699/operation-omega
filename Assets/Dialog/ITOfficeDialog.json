@@ -1,1 +1,40 @@
-{}
+{
+    "p1": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "P1:Hi there! Do you have an appointment?",
+            "SELF:...",
+            "P1:Oh. That. Well, we are happy to lend our services to you. Let's all head there together!"
+        ]
+    },
+    "p2": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "P2:We don't know anything about anything, here at IT.",
+            "P2:On par with student inquiries, we Google everything.",
+            "P2:So no, we don't know anything about the death."
+        ]
+    },
+    "monitor": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Standard analytics and whatnot. But I guess with the screen on sleep mode, you can't seen anything.",
+            "SELF:I don't think they have touched it for a while, though.",
+            "SELF:...",
+            "SELF:Monitor is off."
+        ]
+    },
+    "door": {
+        "type": "binary",
+        "effect": "scene:Computer Lab",
+        "dialog": [
+            "SELF:You guys should come along.",
+            "P1:Sure.",
+            "P2:...",
+            "SELF:Warning: are you sure you want to leave this area?"
+        ]
+    }
+}

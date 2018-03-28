@@ -1,1 +1,104 @@
-{}
+{
+    "body": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "P1:It's a murder now, huh. And I thought it was a suicide.",
+            "P2:A murder? How interesting.",
+            "P1:I thought that we'd get to skip work because of the investigation, but apparently students on-campus aren't notified yet.",
+            "P1:I guess they don't want to blow the news on them just yet.",
+            "P2:Hah. Yet another thing to crush their hopes and dreams.",
+            "SELF:...",
+            "P1:Dude. Calm down! What's with you?!"
+        ]
+    },
+    "securitycamera": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "P1:Oh. We didn't set them up. Security did.",
+            "P1:We kinda hacked into the system to monitor the lab. We were getting reports on stolen equipment, and wanted to get to the bottom of it.",
+            "SELF:There was a jump-cut in the footage.",
+            "P1:Maybe it's a glitch in the system?",
+            "P2:For security purposes, data recorded is not stored.",
+            "P1:This is interesting. We will look into that when everything dies down."
+        ]
+    },
+    "desktop": {
+        "type": "linear",
+        "effect": "ring:phone",
+        "dialog": [
+            "SELF:Pretty high-end stuff, alright.",
+            "P1:Yup. A professor is currently teaching a course on graphics and games - we were told to upgrade them. The students seem happy.",
+            "P2:One time I passed by, they were yelling their heads off.",
+            "P1:Looks like someone finally finished that project.",
+            "P2:Bug-free.",
+            "P1:Hopefully.",
+            "SELF:Can I take a look inside?",
+            "P1:Sure.... Here's a screwdriver, but why...",
+            "P2:...",
+            "SELF:What's that green stuff? A small wad of it is stuck to the edge of the casing.",
+            "P1:I don't know",
+            "SELF:Smells like weed."
+        ]
+    },
+    "phone": {
+        "type": "linear",
+        "effect": "show:pics",
+        "dialog": [
+            "SELF:Hello? Hello?",
+            "SELF:...",
+            "SELF:They hung up.",
+            "SELF:...",
+            "SELF:Why is it in camera mode?"
+        ]
+    },
+    "couch": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Ugliest couch ever.",
+            "SELF:It looks absolutely horrible, and doesn't even seem comfortable.",
+            "SELF:The thing is caked with dust - how long has it been sitting there?",
+            "SELF:Absolutely disgusting."
+        ]
+    },
+    "shelf": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Shelves are caked with dust. Apparently, no one saw fit to put stuff on it.",
+            "SELF:Looks like students aren't too keen on reading, if they are busy playing games.",
+            "SELF:Great to know that this school is big on literature.",
+            "P1:We used to have books. Then people started taking them.",
+            "P1:We didn't have any security cameras installed, so we didn't know who did it.",
+            "P2:We eventually just grabbed the books and shoved them in the school library, to avoid losses, you know."
+        ]
+    },
+    "cubby": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Cubbies caked with dust.",
+            "P1:Once upon a time, we had an electronics class that had stuff stored in there.",
+            "P2:Now, we don't."
+        ]
+    },
+    "maindoor": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Pretty good security.",
+            "P2:Very thick doors. Good at keeping people out and the fires in.",
+            "P2:Or the other way around."
+        ]
+    },
+    "sidedoor": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:It's unlocked.",
+            "P1:That door leads to a private research room."
+        ]
+    }
+}
