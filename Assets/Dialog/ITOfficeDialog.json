@@ -5,7 +5,8 @@
         "dialog": [
             "P1:Hi there! Do you have an appointment?",
             "SELF:...",
-            "P1:Oh. That. Well, we are happy to lend our services to you. Let's all head there together!"
+            "P1:Oh. That. Well, we are happy to lend our services to you. Let's all head to the lab together!",
+            "P1:When you're ready, head for the door! We'll follow suit!"
         ]
     },
     "p2": {

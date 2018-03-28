@@ -114,6 +114,56 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &8161309
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4536352606252068, guid: 7f023e981900b1e40bb8752569283385, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536352606252068, guid: 7f023e981900b1e40bb8752569283385, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.528
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536352606252068, guid: 7f023e981900b1e40bb8752569283385, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536352606252068, guid: 7f023e981900b1e40bb8752569283385, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536352606252068, guid: 7f023e981900b1e40bb8752569283385, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536352606252068, guid: 7f023e981900b1e40bb8752569283385, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536352606252068, guid: 7f023e981900b1e40bb8752569283385, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536352606252068, guid: 7f023e981900b1e40bb8752569283385, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043706846974786, guid: 7f023e981900b1e40bb8752569283385, type: 2}
+      propertyPath: m_Name
+      value: Door
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7f023e981900b1e40bb8752569283385, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &702698826 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+  m_PrefabInternal: {fileID: 2082335917}
 --- !u!1 &1319749076
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,7 +274,7 @@ Prefab:
     - target: {fileID: 224363514301570270, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224363514301570270, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
         type: 2}
@@ -276,6 +326,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114072486356767300, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
+        type: 2}
+      propertyPath: m_Player
+      value: 
+      objectReference: {fileID: 702698826}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65b788b3a17eabd44bb834f5b44ec3d5, type: 2}
   m_IsPrefabParent: 0
@@ -338,7 +393,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4865080245506028, guid: c83d6cb9b31fd01478a3a4fab004b789, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c83d6cb9b31fd01478a3a4fab004b789, type: 2}
@@ -380,7 +435,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4426076826585344, guid: 6222545c57011894dbbc107fdcb4337e, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1988790556042244, guid: 6222545c57011894dbbc107fdcb4337e, type: 2}
       propertyPath: m_Layer
@@ -426,7 +481,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_Name
