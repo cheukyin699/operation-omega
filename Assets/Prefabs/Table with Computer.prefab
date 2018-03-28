@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23384184630041950}
   - component: {fileID: 65686693464249972}
   m_Layer: 0
-  m_Name: monitor
+  m_Name: Monitor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 23865232296001336}
   - component: {fileID: 65237404003174906}
   m_Layer: 0
-  m_Name: keyboard
+  m_Name: Keyboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 23332208798671942}
   - component: {fileID: 65560428053974678}
   m_Layer: 0
-  m_Name: desktop
+  m_Name: Desktop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 23915210025681314}
   - component: {fileID: 65075533223418896}
   m_Layer: 0
-  m_Name: table
+  m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 23837450741292342}
   - component: {fileID: 65729334251687968}
   m_Layer: 0
-  m_Name: monitor (1)
+  m_Name: Monitor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 4054972726698270}
   - component: {fileID: 65261709843706382}
   m_Layer: 0
-  m_Name: chair
+  m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 4183147459880304}
   - component: {fileID: 65111728057570126}
   m_Layer: 0
-  m_Name: mouse
+  m_Name: Mouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

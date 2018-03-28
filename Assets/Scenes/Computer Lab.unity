@@ -260,7 +260,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (3)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -327,7 +327,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (4)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -441,7 +441,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (6)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -508,7 +508,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (3)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -575,7 +575,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (2)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -638,7 +638,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (2)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -705,7 +705,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (1)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -823,7 +823,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (4)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -1079,7 +1079,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (2)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -1152,7 +1152,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (3)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -1312,7 +1312,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (1)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -1379,7 +1379,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (3)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -1446,7 +1446,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (3)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -1589,7 +1589,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (12)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -1652,7 +1652,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (14)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -1766,7 +1766,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (3)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -1833,7 +1833,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (2)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -1900,7 +1900,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (4)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -2014,7 +2014,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (11)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -2182,7 +2182,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (4)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -2249,7 +2249,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (3)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -2665,7 +2665,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (2)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -2728,7 +2728,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (13)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -2944,7 +2944,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (1)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -3163,7 +3163,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (2)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -3393,7 +3393,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (7)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -3460,7 +3460,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (4)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -3557,7 +3557,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (2)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -3775,7 +3775,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (4)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -3838,7 +3838,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (8)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -3901,7 +3901,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (10)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -4031,7 +4031,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (4)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -4215,7 +4215,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (1)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -4329,7 +4329,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (4)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -4402,34 +4402,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4141934410377724, guid: 79afdb3904aebd44ab537bd186bfe89f,
     type: 2}
   m_PrefabInternal: {fileID: 1545515191}
---- !u!1 &1559583742
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1559583743}
-  m_Layer: 0
-  m_Name: GameObject (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1559583743
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1559583742}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1905465136}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1571981615
 Prefab:
   m_ObjectHideFlags: 0
@@ -4669,7 +4641,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (1)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -4736,7 +4708,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (1)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -4799,7 +4771,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (9)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -4866,7 +4838,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (1)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -4938,7 +4910,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (2)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -5056,7 +5028,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (1)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -5123,7 +5095,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (1)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -5133,34 +5105,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4141934410377724, guid: 79afdb3904aebd44ab537bd186bfe89f,
     type: 2}
   m_PrefabInternal: {fileID: 1824678799}
---- !u!1 &1845647058
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1845647059}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1845647059
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1845647058}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1905465136}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1856437038
 Prefab:
   m_ObjectHideFlags: 0
@@ -5335,8 +5279,6 @@ Transform:
   - {fileID: 1100360289}
   - {fileID: 168529714}
   - {fileID: 1929958407}
-  - {fileID: 1845647059}
-  - {fileID: 1559583743}
   m_Father: {fileID: 47901832}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5393,7 +5335,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
       propertyPath: m_Name
-      value: shelf (5)
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
@@ -5493,7 +5435,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (2)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -5560,7 +5502,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (4)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -5673,7 +5615,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (3)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -5938,7 +5880,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_Name
-      value: cubby (3)
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}

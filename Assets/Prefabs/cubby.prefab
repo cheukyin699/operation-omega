@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23807144596073226}
   - component: {fileID: 65628035750240604}
   m_Layer: 0
-  m_Name: cubby
+  m_Name: Cubby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,8 +36,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1765537065113528}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.0742, y: -1.26, z: -3.0329998}
-  m_LocalScale: {x: 0.09522855, y: 0.09522847, z: 0.09522853}
+  m_LocalPosition: {x: 2.0742, y: 0.626, z: -3.0329998}
+  m_LocalScale: {x: 0.09523006, y: 0.09523, z: 0.09523006}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -57,7 +57,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: b98727ebc4937a045bd94d596d99a36e, type: 3}
-  - {fileID: 2100000, guid: 14a076797205eb849a4143ffffb7e2b1, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
