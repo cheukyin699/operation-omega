@@ -45,7 +45,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.095, y: -0.539, z: -2.103}
+  m_LocalPosition: {x: -1.061, y: -0.744, z: -0.742}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 400002}
@@ -132,11 +132,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4d9bead84dc2f844595eb4d7ac97203d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.096
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -354,3 +354,8 @@ MonoBehaviour:
   m_MaxDistance: 2
   m_GlowingMaterial: {fileID: 2100000, guid: 3dae6b9ef4212a449b671c9d074da7b7, type: 2}
   m_Overlay: {fileID: 0}
+  m_Dialog: {fileID: 4900000, guid: 5296a54271b4b7344a36525c8535f658, type: 3}
+  m_DialogText: {fileID: 0}
+  m_DialogPanel: {fileID: 0}
+  m_OptionsPanel: {fileID: 0}
+  m_Highlight: 0

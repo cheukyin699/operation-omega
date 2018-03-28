@@ -437,10 +437,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 1988790556042244, guid: 6222545c57011894dbbc107fdcb4337e, type: 2}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6222545c57011894dbbc107fdcb4337e, type: 2}
   m_IsPrefabParent: 0
@@ -483,15 +479,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 2}
       propertyPath: m_Overlay
       value: 
       objectReference: {fileID: 1326383843}
+    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: m_DialogText
+      value: 
+      objectReference: {fileID: 1326383841}
     - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 2}
       propertyPath: m_DialogPanel
@@ -502,16 +499,10 @@ Prefab:
       propertyPath: m_OptionsPanel
       value: 
       objectReference: {fileID: 1326383840}
-    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
-        type: 2}
-      propertyPath: m_DialogText
-      value: 
-      objectReference: {fileID: 1326383841}
-    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
-        type: 2}
-      propertyPath: m_Dialog
-      value: 
-      objectReference: {fileID: 4900000, guid: 5296a54271b4b7344a36525c8535f658, type: 3}
+    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0

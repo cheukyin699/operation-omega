@@ -24,6 +24,10 @@ public class CheckObject : MonoBehaviour
     private string m_SelectedObject;
     // Contains selected object ID
     private Script m_SelectedScript;
+    // Disables the controls
+    private bool m_DisableControls = false;
+    // Audio things, for more control
+    private AudioSource m_Ambient;
 
     // Use this for initialization
     void Start ()
@@ -32,6 +36,7 @@ public class CheckObject : MonoBehaviour
         m_SeeingRenders = null;
         m_SelectedObject = "";
         m_SelectedScript = null;
+        m_Ambient = GetComponent<AudioSource> ();
 
         // Sanity checking
         if (m_GlowingMaterial == null && !m_Highlight) {
@@ -131,7 +136,7 @@ public class CheckObject : MonoBehaviour
     {
         if (HasActiveDialog () && m_SelectedScript.NeedOptions ()) {
             // Disable dialog panel
-            m_DialogPanel.SetActive(false);
+            m_DialogPanel.SetActive (false);
 
             // Must call .DoCallback() in order to call callback, if that's what is warranted
             m_SelectedScript.DoCallback (choice);
@@ -166,7 +171,7 @@ public class CheckObject : MonoBehaviour
                 break;
             case "footage":
                 // Videos are grouped together
-                // TODO
+                DoVideo ();
                 break;
             }
             break;
@@ -175,6 +180,43 @@ public class CheckObject : MonoBehaviour
             // TODO
             break;
         }
+    }
+
+    void DoVideo ()
+    {
+        var cam = m_Camera.gameObject;
+        var player = cam.AddComponent<UnityEngine.Video.VideoPlayer> ();
+
+        // Autoplay
+        player.playOnAwake = true;
+
+        // Use near plane
+        player.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;
+
+        // Set the video to play
+        // FIXME Set the correct video to play
+        var vid = Resources.Load ("TestVid") as UnityEngine.Video.VideoClip;
+        player.clip = vid;
+
+        // No looping
+        player.isLooping = false;
+
+        // Disable all controls and musics until it ends
+        player.loopPointReached += DonePlaying;
+        m_DisableControls = true;
+        m_Ambient.Pause ();
+
+        // Play it
+        player.Play ();
+    }
+
+    void DonePlaying (UnityEngine.Video.VideoPlayer p)
+    {
+        m_DisableControls = false;
+        m_Ambient.Play ();
+
+        // Remove the component
+        Destroy (p);
     }
 
     // When you click, you check the object on your cursor
@@ -194,7 +236,6 @@ public class CheckObject : MonoBehaviour
             }
         } else if (HasActiveDialog ()) {
             // Already has active dialog - let's advance the dialog!
-            // TODO Check dialog type before advancing, and use the correct overload functions
             m_SelectedScript.Advance ();
 
             // Check for end of dialog
@@ -254,7 +295,7 @@ public class CheckObject : MonoBehaviour
         }
 
         // Check for mouse button input
-        if (Input.GetMouseButtonUp (0)) {
+        if (Input.GetMouseButtonUp (0) && !m_DisableControls) {
             // Left-click to trigger
             HandleClick ();
         }
