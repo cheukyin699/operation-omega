@@ -14,6 +14,7 @@ public class CheckObject : MonoBehaviour
     [SerializeField] private Text m_DialogText = null;
     [SerializeField] private GameObject m_DialogPanel = null;
     [SerializeField] private GameObject m_OptionsPanel = null;
+    [SerializeField] private bool m_Highlight = true;
 
     private Camera m_Camera;
     private Renderer[] m_SeeingRenders;
@@ -33,7 +34,7 @@ public class CheckObject : MonoBehaviour
         m_SelectedScript = null;
 
         // Sanity checking
-        if (m_GlowingMaterial == null) {
+        if (m_GlowingMaterial == null && !m_Highlight) {
             // If you forgot to specify a material
             Debug.LogError ("Error: 'Glow Outline' material not found.");
         }
@@ -51,7 +52,7 @@ public class CheckObject : MonoBehaviour
         }
         if (m_OptionsPanel == null) {
             // If you forgot to specify the options panel
-            Debug.LogError ("Error: Optoins Panel not found; please assign it.");
+            Debug.LogError ("Error: Options Panel not found; please assign it.");
         }
 
         // Script management is also done here
@@ -63,7 +64,7 @@ public class CheckObject : MonoBehaviour
     {
         if (m_SeeingRenders != null) {
             // Remove all the object's glowing material
-            for (int i = 0; i < m_SeeingRenders.Length; i++) {
+            for (int i = 0; i < m_SeeingRenders.Length && m_Highlight; i++) {
                 Material[] ms = m_SeeingRenders [i].materials;
                 int last = ms.Length - 1;
                 // Replace the last material
@@ -237,7 +238,7 @@ public class CheckObject : MonoBehaviour
                 m_SeeingRenders = rs;
 
                 // Do for every material in every render available...
-                for (int i = 0; i < rs.Length; i++) {
+                for (int i = 0; i < rs.Length && m_Highlight; i++) {
                     Material[] ms = rs [i].materials;
                     int last = ms.Length - 1;
                     // Replace the last material
