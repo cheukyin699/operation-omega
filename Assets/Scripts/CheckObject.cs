@@ -28,6 +28,7 @@ public class CheckObject : MonoBehaviour
     private bool m_DisableControls = false;
     // Audio things, for more control
     private AudioSource m_Ambient;
+    private AudioSource m_PhoneRing;
 
     // Use this for initialization
     void Start ()
@@ -37,6 +38,13 @@ public class CheckObject : MonoBehaviour
         m_SelectedObject = "";
         m_SelectedScript = null;
         m_Ambient = GetComponent<AudioSource> ();
+        m_PhoneRing = gameObject.AddComponent<AudioSource> ();
+        m_SMan = new ScriptManager (m_Dialog);
+
+        // FIXME: Load the correct ringtone
+        m_PhoneRing.clip = Resources.Load ("AmbientMusic") as AudioClip;
+        m_PhoneRing.loop = true;
+        m_PhoneRing.playOnAwake = false;
 
         // Sanity checking
         if (m_GlowingMaterial == null && !m_Highlight) {
@@ -59,9 +67,6 @@ public class CheckObject : MonoBehaviour
             // If you forgot to specify the options panel
             Debug.LogError ("Error: Options Panel not found; please assign it.");
         }
-
-        // Script management is also done here
-        m_SMan = new ScriptManager (m_Dialog);
     }
 
     // Reverts existing game object back to the way God intended
@@ -173,11 +178,18 @@ public class CheckObject : MonoBehaviour
                 // Videos are grouped together
                 DoVideo ();
                 break;
+            default:
+                Debug.LogError ("Invalid media: '" + data + "'");
+                break;
             }
             break;
         case "hear":
             // Listen to some media, must be audio
-            // TODO
+            m_PhoneRing.Play ();
+            m_Ambient.Stop ();
+            break;
+        default:
+            Debug.LogError ("Invalid effect: '" + effect + "'");
             break;
         }
     }
@@ -298,6 +310,13 @@ public class CheckObject : MonoBehaviour
         if (Input.GetMouseButtonUp (0) && !m_DisableControls) {
             // Left-click to trigger
             HandleClick ();
+        }
+
+        // I'm gonna hate myself, but I cannot figure out another other than to hard-code
+        // the code that stops the phone from ringing.
+        // FIXME: never fix me
+        if (m_SelectedObject == "phone") {
+            m_PhoneRing.Stop ();
         }
     }
 }
