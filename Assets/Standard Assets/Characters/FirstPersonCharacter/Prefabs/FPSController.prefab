@@ -358,4 +358,5 @@ MonoBehaviour:
   m_DialogText: {fileID: 0}
   m_DialogPanel: {fileID: 0}
   m_OptionsPanel: {fileID: 0}
+  m_HUDCanvas: {fileID: 0}
   m_Highlight: 0

@@ -14,7 +14,7 @@ public class CheckObject : MonoBehaviour
     [SerializeField] private Text m_DialogText = null;
     [SerializeField] private GameObject m_DialogPanel = null;
     [SerializeField] private GameObject m_OptionsPanel = null;
-    [SerializeField] private Canvas m_HUD = null;
+    [SerializeField] private Canvas m_HUDCanvas = null;
     [SerializeField] private bool m_Highlight = true;
 
     private Camera m_Camera;
@@ -30,6 +30,8 @@ public class CheckObject : MonoBehaviour
     // Audio things, for more control
     private AudioSource m_Ambient;
     private AudioSource m_PhoneRing;
+    // HUD for controlling things
+    private HUD m_HUD;
 
     // Use this for initialization
     void Start ()
@@ -41,6 +43,7 @@ public class CheckObject : MonoBehaviour
         m_Ambient = GetComponent<AudioSource> ();
         m_PhoneRing = gameObject.AddComponent<AudioSource> ();
         m_SMan = new ScriptManager (m_Dialog);
+        m_HUD = m_HUDCanvas.GetComponent<HUD> ();
 
         // FIXME: Load the correct ringtone
         m_PhoneRing.clip = Resources.Load ("AmbientMusic") as AudioClip;
@@ -141,14 +144,15 @@ public class CheckObject : MonoBehaviour
     public void SelectOption (bool choice)
     {
         if (HasActiveDialog () && m_SelectedScript.NeedOptions ()) {
-            // Disable dialog panel
+            // Disable dialog panel and options
             m_DialogPanel.SetActive (false);
 
             // Must call .DoCallback() in order to call callback, if that's what is warranted
             m_SelectedScript.DoCallback (choice);
-            m_SelectedScript.Reset ();
-            m_SelectedScript = null;
         }
+        m_OptionsPanel.SetActive (false);
+        m_SelectedScript.Reset ();
+        m_SelectedScript = null;
     }
 
     // This is called whenever a non-trivial effect is executed
@@ -174,6 +178,8 @@ public class CheckObject : MonoBehaviour
             case "phone":
                 // Images are grouped together
                 // TODO
+                m_HUD.SetImage (data);
+                m_HUD.DisplayImage (true);
                 break;
             case "footage":
                 // Videos are grouped together
@@ -309,9 +315,12 @@ public class CheckObject : MonoBehaviour
         }
 
         // Check for mouse button input
-        if (Input.GetMouseButtonUp (0) && !m_DisableControls) {
+        if (Input.GetMouseButtonUp (0) && !m_DisableControls && !m_HUD.IsViewingImage ()) {
             // Left-click to trigger
             HandleClick ();
+        } else if (Input.GetMouseButtonUp (0) && m_HUD.IsViewingImage ()) {
+            // Snap out of image viewing mode
+            m_HUD.DisplayImage (false);
         }
 
         // I'm gonna hate myself, but I cannot figure out another other than to hard-code

@@ -5792,6 +5792,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65b788b3a17eabd44bb834f5b44ec3d5, type: 2}
   m_IsPrefabParent: 0
+--- !u!223 &1972345492 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 223517981636910486, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1972345483}
 --- !u!1 &2000867151
 GameObject:
   m_ObjectHideFlags: 0
@@ -6006,6 +6011,11 @@ Prefab:
       propertyPath: m_OptionsPanel
       value: 
       objectReference: {fileID: 667573128}
+    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: m_HUDCanvas
+      value: 
+      objectReference: {fileID: 1972345492}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0

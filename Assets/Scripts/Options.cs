@@ -34,6 +34,14 @@ public class Options : MonoBehaviour
         if (enabled) {
             Vector3 q = Camera.main.transform.rotation.eulerAngles - m_InitRotation.eulerAngles;
 
+            // Sometimes, we are on the 0-360 boundary, and we would need to normalize it or else there would
+            // be a huge jump, leading to the wrong option being picked.
+            if (q.y > 180) {
+                q.y -= 360;
+            } else if (q.y < -180) {
+                q.y += 360;
+            }
+
             // If rotation is greater than threshold, call the player callback function
             if (Mathf.Abs (q.y) >= m_RotateThreshold) {
                 // if q.y < 0, "yes"; otherwise, "no"

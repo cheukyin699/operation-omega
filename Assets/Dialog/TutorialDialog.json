@@ -1,7 +1,7 @@
 {
     "body": {
         "type": "binary",
-        "effect": "autopsy:view",
+        "effect": "view:autopsy",
         "dialog": [
             "SELF:Hmm.... The body is quite stiff.",
             "SELF:It seems that the suspected suicide occurred at least 6 hours ago.",

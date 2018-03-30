@@ -3594,6 +3594,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!223 &1294839097 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 223517981636910486, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1972345483}
 --- !u!1 &1319749076
 GameObject:
   m_ObjectHideFlags: 0
@@ -5730,6 +5735,46 @@ Prefab:
       propertyPath: m_Player
       value: 
       objectReference: {fileID: 1286555995}
+    - target: {fileID: 224560241455290922, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560241455290922, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560241455290922, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560241455290922, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560241455290922, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560241455290922, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560241455290922, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 224560241455290922, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65b788b3a17eabd44bb834f5b44ec3d5, type: 2}
   m_IsPrefabParent: 0
@@ -5952,6 +5997,11 @@ Prefab:
       propertyPath: m_Highlight
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: m_HUDCanvas
+      value: 
+      objectReference: {fileID: 1294839097}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
