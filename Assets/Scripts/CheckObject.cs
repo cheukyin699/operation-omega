@@ -14,6 +14,7 @@ public class CheckObject : MonoBehaviour
     [SerializeField] private Text m_DialogText = null;
     [SerializeField] private GameObject m_DialogPanel = null;
     [SerializeField] private GameObject m_OptionsPanel = null;
+    [SerializeField] private Canvas m_HUD = null;
     [SerializeField] private bool m_Highlight = true;
 
     private Camera m_Camera;
@@ -185,6 +186,7 @@ public class CheckObject : MonoBehaviour
             break;
         case "hear":
             // Listen to some media, must be audio
+            // Since you are nearing the end of the game, disable all ambient musics
             m_PhoneRing.Play ();
             m_Ambient.Stop ();
             break;
