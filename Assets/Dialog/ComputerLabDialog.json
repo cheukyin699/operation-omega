@@ -12,6 +12,33 @@
             "P1:Dude. Calm down! What's with you?!"
         ]
     },
+    "p1": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "P1:Hey, aren't you supposed to be looking for something?",
+            "SELF:..."
+        ]
+    },
+    "p2": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "P2:Sup.",
+            "SELF:..."
+        ]
+    },
+    "tv": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:What a large TV this is.",
+            "SELF:What is it even used for? There's nothing to watch anyways - there's no box!",
+            "P1:They usually just connect a long HDMI cable from the TV to one of the computers.",
+            "P2:Yup. Large monitors mean a better gaming experience.",
+            "P1:O-o-o-or a better way to share your code and present things!"
+        ]
+    },
     "securitycamera": {
         "type": "linear",
         "effect": "none",
@@ -22,6 +49,15 @@
             "P1:Maybe it's a glitch in the system?",
             "P2:For security purposes, data recorded is not stored.",
             "P1:This is interesting. We will look into that when everything dies down."
+        ]
+    },
+    "fridge": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Pop - $0.50, water - $0.25",
+            "P1:It gets restocked by a professor every once in a while. Costco stuff is pretty cheap!",
+            "P2:Running the vending machine upstairs out of business."
         ]
     },
     "desktop": {

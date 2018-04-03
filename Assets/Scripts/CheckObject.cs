@@ -32,6 +32,8 @@ public class CheckObject : MonoBehaviour
     private AudioSource m_PhoneRing;
     // HUD for controlling things
     private HUD m_HUD;
+    // Game over condition
+    private bool m_GameOver = false;
 
     // Use this for initialization
     void Start ()
@@ -185,6 +187,9 @@ public class CheckObject : MonoBehaviour
                 // TODO
                 m_HUD.SetImage (data);
                 m_HUD.DisplayImage (true);
+
+                // Set the flag for game over
+                m_GameOver = data == "phone";
                 break;
             case "footage":
                 // Videos are grouped together
@@ -326,6 +331,11 @@ public class CheckObject : MonoBehaviour
         } else if (Input.GetMouseButtonUp (0) && m_HUD.IsViewingImage ()) {
             // Snap out of image viewing mode
             m_HUD.DisplayImage (false);
+
+            // If the game over flag is set, head to the game over
+            if (m_GameOver) {
+                SceneManager.LoadScene ("Game Over");
+            }
         }
 
         // I'm gonna hate myself, but I cannot figure out another other than to hard-code

@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 114019889650549334}
   - component: {fileID: 114767690762299394}
   - component: {fileID: 114703859641944768}
-  - component: {fileID: 114831283222569720}
   m_Layer: 5
   m_Name: HUD
   m_TagString: HUD
@@ -131,7 +130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1797576307230028
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +442,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_GameOver: {fileID: 1258326185806102}
-  m_DialogPane: {fileID: 1797576307230028}
+  DialogPane: {fileID: 1797576307230028}
+  Overlay: {fileID: 114248954156550646}
 --- !u!114 &114767690762299394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -487,19 +487,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114831283222569720
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1012909538582864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c16b7baab364144905b27802140f27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_GameOver: {fileID: 1258326185806102}
-  m_DialogPane: {fileID: 1797576307230028}
 --- !u!114 &114851078931632840
 MonoBehaviour:
   m_ObjectHideFlags: 1

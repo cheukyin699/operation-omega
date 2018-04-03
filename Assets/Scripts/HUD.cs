@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class HUD : MonoBehaviour
 {
     [SerializeField] private GameObject m_GameOver = null;
-    [SerializeField] private GameObject m_DialogPane = null;
+    [SerializeField] public GameObject DialogPane = null;
 
     private Image m_Cursor;
     private Image m_Image;
-    private Text m_Overlay;
+    public Text Overlay;
 
     // Use this for initialization
     void Start ()
@@ -26,7 +26,6 @@ public class HUD : MonoBehaviour
                 break;
             }
         }
-        m_Overlay = GetComponent<Text> ();
     }
 
     public void SetImage (string img)
@@ -44,16 +43,11 @@ public class HUD : MonoBehaviour
         return m_Image.enabled;
     }
 	
-    // Update is called once per frame
-    void Update ()
-    {
-    }
-
-    void TriggerGameOver ()
+    public void TriggerGameOver ()
     {
         m_Cursor.enabled = false;
-        m_Overlay.enabled = false;
-        m_DialogPane.SetActive (false);
+        Overlay.enabled = false;
+        DialogPane.SetActive (false);
         m_GameOver.SetActive (true);
     }
 }

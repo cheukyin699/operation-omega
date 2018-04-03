@@ -24,6 +24,13 @@
             "SELF:It's lonely."
         ]
     },
+    "fridge": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Pop - $0.50, water - $0.25"
+        ]
+    },
     "gun": {
         "type": "linear",
         "effect": "none",
