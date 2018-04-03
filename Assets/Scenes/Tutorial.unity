@@ -5192,7 +5192,13 @@ Prefab:
       propertyPath: m_Name
       value: Computer Lab
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 82473478100171144, guid: 3039c1079ec8433459435226bc9709ef,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 82473478100171144, guid: 3039c1079ec8433459435226bc9709ef, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 3039c1079ec8433459435226bc9709ef, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1905465135
@@ -5923,20 +5929,6 @@ Prefab:
       propertyPath: m_Overlay
       value: 
       objectReference: {fileID: 494833471}
-    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
-        type: 2}
-      propertyPath: m_Filename
-      value: TutorialDialog
-      objectReference: {fileID: 0}
-    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
-        type: 2}
-      propertyPath: m_Dialog
-      value: 
-      objectReference: {fileID: 4900000, guid: dc432fb26cef7e64e813aa827eaf7b25, type: 3}
     - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 2}
       propertyPath: m_DialogText
@@ -5954,14 +5946,13 @@ Prefab:
       objectReference: {fileID: 667573128}
     - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 2}
-      propertyPath: m_Highlight
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
-        type: 2}
       propertyPath: m_HUDCanvas
       value: 
       objectReference: {fileID: 1294839097}
+    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0

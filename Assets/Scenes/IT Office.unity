@@ -453,7 +453,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_GameOver: {fileID: 2146179889}
-  m_DialogPane: {fileID: 332219670}
+  DialogPane: {fileID: 0}
+  Overlay: {fileID: 0}
 --- !u!223 &1254875192 stripped
 Canvas:
   m_PrefabParentObject: {fileID: 223517981636910486, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
@@ -753,6 +754,11 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: m_Dialog
+      value: 
+      objectReference: {fileID: 4900000, guid: 2fcaf38623c8e1e4a89fda232b0c8a4c, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0

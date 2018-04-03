@@ -25,6 +25,41 @@
             "SELF:The only thing that pops out, as a result, is the conveniently-placed chair situated in the middle of the room."
         ]
     },
+    "table": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Holding up nicely."
+        ]
+    },
+    "chair": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:No diversity."
+        ]
+    },
+    "keyboard": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Better not touch this."
+        ]
+    },
+    "mouse": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Better not touch this."
+        ]
+    },
+    "desktop": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Better not touch this."
+        ]
+    },
     "door": {
         "type": "binary",
         "effect": "scene:IT Office",

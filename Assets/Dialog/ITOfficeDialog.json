@@ -28,6 +28,34 @@
             "SELF:Monitor is off."
         ]
     },
+    "chair": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:No diversity."
+        ]
+    },
+    "keyboard": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Better not touch this."
+        ]
+    },
+    "mouse": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Better not touch this."
+        ]
+    },
+    "desktop": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Better not touch this."
+        ]
+    },
     "door": {
         "type": "binary",
         "effect": "scene:Computer Lab",

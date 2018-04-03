@@ -24,11 +24,50 @@
             "SELF:It's lonely."
         ]
     },
+    "table": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Holding up nicely."
+        ]
+    },
     "fridge": {
         "type": "linear",
         "effect": "none",
         "dialog": [
             "SELF:Pop - $0.50, water - $0.25"
+        ]
+    },
+    "chair": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Stay Comfy~"
+        ]
+    },
+    "keyboard": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Tappity tap tap~"
+        ]
+    },
+    "mouse": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:*click*",
+            "SELF:*click* *click*",
+            "SELF:*click* *click* *click*",
+            "SELF:*cliiiiiick*",
+            "SELF:*clickity* *click*"
+        ]
+    },
+    "phonebefore": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Seems like the guys phone."
         ]
     },
     "gun": {

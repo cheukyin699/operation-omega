@@ -39,6 +39,16 @@
             "P1:O-o-o-or a better way to share your code and present things!"
         ]
     },
+    "gun": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:A good-ole fashioned .22 calibre revolver. Maximum 10 loads, one missing.",
+            "SELF:Nine left.",
+            "P1:Aren't you supposed to do something about it?",
+            "SELF:No. The evidence cannot be tempered with."
+        ]
+    },
     "securitycamera": {
         "type": "linear",
         "effect": "none",
@@ -76,6 +86,46 @@
             "SELF:What's that green stuff? A small wad of it is stuck to the edge of the casing.",
             "P1:I don't know",
             "SELF:Smells like weed."
+        ]
+    },
+    "monitor": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Dual monitors.",
+            "P1:Yup. Anything else?",
+            "SELF:No."
+        ]
+    },
+    "chair": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Stay Comfy~"
+        ]
+    },
+    "keyboard": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:*taaaaaaaaaap*",
+            "P1:All tapped out, huh?"
+        ]
+    },
+    "mouse": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:...",
+            "P1:Squeak?",
+            "P2:You think you're so funny, do you?"
+        ]
+    },
+    "phonebefore": {
+        "type": "linear",
+        "effect": "none",
+        "dialog": [
+            "SELF:Seems like the guys phone."
         ]
     },
     "phone": {

@@ -34,6 +34,9 @@ public class CheckObject : MonoBehaviour
     private HUD m_HUD;
     // Game over condition
     private bool m_GameOver = false;
+    // Phone ringing condition
+    // Hardcoded for convenience
+    private bool m_IsPhoneRing = false;
 
     // Use this for initialization
     void Start ()
@@ -205,6 +208,7 @@ public class CheckObject : MonoBehaviour
             // Since you are nearing the end of the game, disable all ambient musics
             m_PhoneRing.Play ();
             m_Ambient.Stop ();
+            m_IsPhoneRing = data == "phone";
             break;
         default:
             Debug.LogError ("Invalid effect: '" + effect + "'");
@@ -256,7 +260,15 @@ public class CheckObject : MonoBehaviour
         if (HasSelected () && !HasActiveDialog ()) {
             // No existing dialog - let's try and get some!
             try {
-                m_SelectedScript = m_SMan [m_SelectedObject];
+                if (m_SelectedObject == "phone" && !m_IsPhoneRing) {
+                    // Don't want the player to trigger it before it rings
+                    // That's why we have this hardcoded!
+                    m_SelectedScript = m_SMan ["phonebefore"];
+                } else {
+                    // The rest of the time, do everything normally
+                    m_SelectedScript = m_SMan [m_SelectedObject];
+                }
+
                 // Set the callback function
                 m_SelectedScript.callback = HandleEffect;
 
@@ -341,7 +353,7 @@ public class CheckObject : MonoBehaviour
         // I'm gonna hate myself, but I cannot figure out another other than to hard-code
         // the code that stops the phone from ringing.
         // FIXME: never fix me
-        if (m_SelectedObject == "phone") {
+        if (m_SelectedObject == "phone" && m_PhoneRing.isPlaying) {
             m_PhoneRing.Stop ();
         }
     }

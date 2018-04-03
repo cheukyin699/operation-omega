@@ -356,6 +356,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1326383839}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!223 &1544467808 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 223517981636910486, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1326383839}
 --- !u!1001 &1652432702
 Prefab:
   m_ObjectHideFlags: 0
@@ -503,6 +508,16 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: m_HUDCanvas
+      value: 
+      objectReference: {fileID: 1544467808}
+    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: m_Dialog
+      value: 
+      objectReference: {fileID: 4900000, guid: 5296a54271b4b7344a36525c8535f658, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0

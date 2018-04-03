@@ -29,7 +29,6 @@ public class ScriptManager {
     public Script this[string id]
     {
         get {
-            Debug.Log (id);
             return m_Dict [id];
         }
     }
