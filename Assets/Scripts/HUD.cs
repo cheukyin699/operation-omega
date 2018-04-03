@@ -25,7 +25,6 @@ public class HUD : MonoBehaviour
                 m_Image.enabled = false;
                 break;
             }
-            print (i.name);
         }
         m_Overlay = GetComponent<Text> ();
     }

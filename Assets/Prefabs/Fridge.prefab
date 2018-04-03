@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 65586517778302218}
   m_Layer: 0
   m_Name: Fridge
-  m_TagString: Untagged
+  m_TagString: Lookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -261,7 +261,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: 6f5e52c68965972428ba77b4a86726bd, type: 3}
   - {fileID: 2100002, guid: 6f5e52c68965972428ba77b4a86726bd, type: 3}
-  - {fileID: 2100000, guid: 14a076797205eb849a4143ffffb7e2b1, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

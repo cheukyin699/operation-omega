@@ -127,7 +127,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4584553659275142, guid: 07f200b18c24feb4ca31f19c187cb62d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.5000008
+      value: -1.409
       objectReference: {fileID: 0}
     - target: {fileID: 4584553659275142, guid: 07f200b18c24feb4ca31f19c187cb62d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -365,7 +365,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4442001573620752, guid: eeef30dcc85a09b47acf4c7b2400edac, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.5000006
+      value: -1.427
       objectReference: {fileID: 0}
     - target: {fileID: 4442001573620752, guid: eeef30dcc85a09b47acf4c7b2400edac, type: 2}
       propertyPath: m_LocalPosition.z
@@ -724,15 +724,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 2}
       propertyPath: m_Overlay
       value: 
       objectReference: {fileID: 332219671}
+    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: m_DialogText
+      value: 
+      objectReference: {fileID: 332219669}
     - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 2}
       propertyPath: m_DialogPanel
@@ -745,24 +746,13 @@ Prefab:
       objectReference: {fileID: 332219668}
     - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 2}
-      propertyPath: m_DialogText
-      value: 
-      objectReference: {fileID: 332219669}
-    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
-        type: 2}
-      propertyPath: m_Dialog
-      value: 
-      objectReference: {fileID: 4900000, guid: 2fcaf38623c8e1e4a89fda232b0c8a4c, type: 3}
-    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
-        type: 2}
-      propertyPath: m_HUD
-      value: 
-      objectReference: {fileID: 1254875192}
-    - target: {fileID: 114626326438222684, guid: 5e9e851c0e142814dac026a256ba2ac0,
-        type: 2}
       propertyPath: m_HUDCanvas
       value: 
       objectReference: {fileID: 1254875192}
+    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0

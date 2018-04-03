@@ -25,10 +25,10 @@ GameObject:
   - component: {fileID: 82473478100171144}
   m_Layer: 2
   m_Name: computerlab 1
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4875607280805836
 Transform:

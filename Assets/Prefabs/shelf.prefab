@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65349154144790878}
   m_Layer: 0
   m_Name: Shelf
-  m_TagString: Untagged
+  m_TagString: Lookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,8 +36,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1476513112033548}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.9638357, y: 1.0535939, z: -1.9254751}
-  m_LocalScale: {x: 0.06967053, y: 0.06967054, z: 0.06967054}
+  m_LocalPosition: {x: -4.9638357, y: 1.0535939, z: -1.291}
+  m_LocalScale: {x: 0.06967, y: 0.06967, z: 0.06967}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -57,7 +57,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: aa7a7c99a81dc514b86eb356300ad681, type: 3}
-  - {fileID: 2100000, guid: 817790f587e510c49a63ebab48f90501, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

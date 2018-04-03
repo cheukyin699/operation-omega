@@ -19,9 +19,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4575358139986120}
+  - component: {fileID: 65991666901130766}
   m_Layer: 0
   m_Name: Phone
-  m_TagString: Untagged
+  m_TagString: Lookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,7 +86,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 4d8706b417ad93e4691f3743c98b8cc5, type: 3}
-  - {fileID: 2100000, guid: 14a076797205eb849a4143ffffb7e2b1, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,3 +113,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1829140189127676}
   m_Mesh: {fileID: 4300000, guid: 4d8706b417ad93e4691f3743c98b8cc5, type: 3}
+--- !u!65 &65991666901130766
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1802984917478020}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2613874, y: 5.004029, z: 5.1983995}
+  m_Center: {x: 0.019443054, y: 6.278163, z: -8.046933}

@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65085456419396994}
   m_Layer: 0
   m_Name: Couch
-  m_TagString: Untagged
+  m_TagString: Lookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +57,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 7527761de0ddc16479b711643be514bb, type: 2}
-  - {fileID: 2100000, guid: 14a076797205eb849a4143ffffb7e2b1, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

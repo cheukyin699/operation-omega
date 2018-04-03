@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65391535533139758}
   m_Layer: 0
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: Lookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   - {fileID: 2100000, guid: 290cfaef348c3c44195ba2228d8d3c54, type: 3}
   - {fileID: 2100002, guid: 290cfaef348c3c44195ba2228d8d3c54, type: 3}
   - {fileID: 2100004, guid: 290cfaef348c3c44195ba2228d8d3c54, type: 3}
-  - {fileID: 2100000, guid: 14a076797205eb849a4143ffffb7e2b1, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

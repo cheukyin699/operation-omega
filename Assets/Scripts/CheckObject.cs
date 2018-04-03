@@ -123,7 +123,12 @@ public class CheckObject : MonoBehaviour
     // Updates active in-game dialog, if dialog is activated
     void UpdateLine ()
     {
-        UpdateLine (m_SelectedScript.Get ().ToString ());
+        // Do a quick check to see if it exists, because we seem to be running into a
+        // null pointer exception.
+        var line = m_SelectedScript.Get ();
+        if (line != null) {
+            UpdateLine (line.ToString ());
+        }
     }
 
     void UpdateLine (string l)
