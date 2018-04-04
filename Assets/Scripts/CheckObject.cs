@@ -347,7 +347,7 @@ public class CheckObject : MonoBehaviour
 
         // I'm gonna hate myself, but I cannot figure out another other than to hard-code
         // the code that stops the phone from ringing.
-        // FIXME: never fix me
+        // When you see the phone (not click it), stop it from playing (like dying in your hands).
         if (m_SelectedObject == "phone" && m_PhoneRing.isPlaying) {
             m_PhoneRing.Stop ();
         }
