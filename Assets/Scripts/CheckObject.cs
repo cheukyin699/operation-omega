@@ -291,12 +291,7 @@ public class CheckObject : MonoBehaviour
                 m_DialogPanel.SetActive (false);
             } else {
                 // If it is not the end, display it normally!
-                if (m_SelectedScript.HasDelay ()) {
-                    UpdateLine (m_SelectedScript.Get ().Speaker + ":");
-                    Invoke ("UpdateLine", Script.DELAY);
-                } else {
-                    UpdateLine ();
-                }
+                UpdateLine ();
             }
         }
     }

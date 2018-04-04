@@ -59,12 +59,6 @@ public class Script
         }
     }
 
-    // Checks to see if the current line of dialog requires a delay "..."
-    public bool HasDelay ()
-    {
-        return Get ().Dialog == "...";
-    }
-
     // Checks to see if we have reached the end of the dialog
     public bool IsEOD ()
     {

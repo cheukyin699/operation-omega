@@ -5278,7 +5278,8 @@ Prefab:
       propertyPath: m_Name
       value: Computer Lab
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 82473478100171144, guid: 3039c1079ec8433459435226bc9709ef, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 3039c1079ec8433459435226bc9709ef, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1905465135
