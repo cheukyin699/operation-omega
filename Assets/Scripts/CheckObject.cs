@@ -51,7 +51,7 @@ public class CheckObject : MonoBehaviour
         m_HUD = m_HUDCanvas.GetComponent<HUD> ();
 
         // FIXME: Load the correct ringtone
-        m_PhoneRing.clip = Resources.Load ("AmbientMusic") as AudioClip;
+        m_PhoneRing.clip = Resources.Load ("PhoneRing") as AudioClip;
         m_PhoneRing.loop = true;
         m_PhoneRing.playOnAwake = false;
 

@@ -3295,6 +3295,10 @@ Prefab:
       propertyPath: m_Name
       value: Body
       objectReference: {fileID: 0}
+    - target: {fileID: 1718272839294318, guid: 81680eed58c462d4286a8c716d62681f, type: 2}
+      propertyPath: m_Name
+      value: Body
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 81680eed58c462d4286a8c716d62681f, type: 2}
   m_IsPrefabParent: 0
