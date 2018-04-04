@@ -124,6 +124,8 @@ GameObject:
   - component: {fileID: 224560241455290922}
   - component: {fileID: 222667929536402072}
   - component: {fileID: 114815971121957242}
+  - component: {fileID: 223986602772369174}
+  - component: {fileID: 114750797651680478}
   m_Layer: 5
   m_Name: Image Overlay
   m_TagString: Untagged
@@ -444,6 +446,19 @@ MonoBehaviour:
   m_GameOver: {fileID: 1258326185806102}
   DialogPane: {fileID: 1797576307230028}
   Overlay: {fileID: 114248954156550646}
+--- !u!114 &114750797651680478
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1664149633486062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1254083943, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 2
+  m_AspectRatio: 1
 --- !u!114 &114767690762299394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -569,6 +584,26 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!223 &223986602772369174
+Canvas:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1664149633486062}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!224 &224363514301570270
 RectTransform:
   m_ObjectHideFlags: 1
@@ -643,8 +678,8 @@ RectTransform:
   m_Father: {fileID: 224363514301570270}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.25, y: 0.1}
-  m_AnchorMax: {x: 0.75, y: 0.9}
+  m_AnchorMin: {x: 0.1, y: 0.1}
+  m_AnchorMax: {x: 0.9, y: 0.9}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
