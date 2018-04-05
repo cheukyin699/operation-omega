@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Background Flash.unity
+    guid: e55a59b70bbb40943b78089008537b37
+  - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 54fdf5acc936dd548bf4423f70e074e8
   - enabled: 1

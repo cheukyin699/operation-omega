@@ -62,7 +62,7 @@ public class GameOverFlow : MonoBehaviour
         switch (m_State) {
         case State.DIALOG:
             // Handles confused dialog
-            if (Input.GetMouseButtonUp (0)) {
+            if (Input.GetButtonUp ("Fire1")) {
                 // If you left-click the dialog, it goes to the next state: gunshot!
                 m_State = State.GUNSHOT;
                 SetupState ();
