@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LookAtThings : MonoBehaviour {
 
@@ -26,7 +27,16 @@ public class LookAtThings : MonoBehaviour {
         m_CountUp = 0;
         m_Target = transform.rotation;
         m_OrigRot = transform.rotation;
+
+        // Subscribe to scene changes
+        SceneManager.activeSceneChanged += OnSceneChange;
 	}
+
+    void OnSceneChange (Scene current, Scene next)
+    {
+        // Update objects
+        m_AllObjects = GameObject.FindGameObjectsWithTag ("Lookable");
+    }
 	
 	// Update is called once per frame
 	void Update () {
