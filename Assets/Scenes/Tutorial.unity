@@ -5741,6 +5741,11 @@ Prefab:
       propertyPath: m_Player
       value: 
       objectReference: {fileID: 1286555995}
+    - target: {fileID: 224560241455290922, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: -80.00002
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65b788b3a17eabd44bb834f5b44ec3d5, type: 2}
   m_IsPrefabParent: 0
