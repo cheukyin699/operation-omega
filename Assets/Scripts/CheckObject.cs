@@ -332,10 +332,10 @@ public class CheckObject : MonoBehaviour
         }
 
         // Check for mouse button input
-        if (Input.GetMouseButtonUp (0) && !m_DisableControls && !m_HUD.IsViewingImage ()) {
+        if (Input.GetButtonUp ("Fire1") && !m_DisableControls && !m_HUD.IsViewingImage ()) {
             // Left-click to trigger
             HandleClick ();
-        } else if (Input.GetMouseButtonUp (0) && m_HUD.IsViewingImage ()) {
+        } else if (Input.GetButtonUp ("Fire1") && m_HUD.IsViewingImage ()) {
             // Snap out of image viewing mode
             m_HUD.DisplayImage (false);
 
