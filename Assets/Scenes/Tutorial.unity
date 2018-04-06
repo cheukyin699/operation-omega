@@ -4521,22 +4521,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4360436059374098, guid: f40810a84d1640d4e80b95b220354782, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.06967
-      objectReference: {fileID: 0}
-    - target: {fileID: 4360436059374098, guid: f40810a84d1640d4e80b95b220354782, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.06967
-      objectReference: {fileID: 0}
-    - target: {fileID: 4360436059374098, guid: f40810a84d1640d4e80b95b220354782, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.06967
-      objectReference: {fileID: 0}
-    - target: {fileID: 1476513112033548, guid: f40810a84d1640d4e80b95b220354782, type: 2}
-      propertyPath: m_Name
-      value: Shelf
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40810a84d1640d4e80b95b220354782, type: 2}
   m_IsPrefabParent: 0
