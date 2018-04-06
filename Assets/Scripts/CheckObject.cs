@@ -238,6 +238,7 @@ public class CheckObject : MonoBehaviour
         // Disable all controls and musics until it ends
         player.loopPointReached += DonePlaying;
         m_DisableControls = true;
+        m_HUDCanvas.enabled = false;
         m_Ambient.Pause ();
 
         // Play it
@@ -246,7 +247,9 @@ public class CheckObject : MonoBehaviour
 
     void DonePlaying (UnityEngine.Video.VideoPlayer p)
     {
+        // Enable everything again
         m_DisableControls = false;
+        m_HUDCanvas.enabled = true;
         m_Ambient.Play ();
 
         // Remove the component
