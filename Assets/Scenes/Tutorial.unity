@@ -2302,30 +2302,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1277383034564186, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
-      propertyPath: m_Name
-      value: couch (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4691640342142856, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4691640342142856, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4691640342142856, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.43916047
-      objectReference: {fileID: 0}
-    - target: {fileID: 4691640342142856, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.43916023
-      objectReference: {fileID: 0}
-    - target: {fileID: 4691640342142856, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.43916023
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
   m_IsPrefabParent: 0
@@ -2520,10 +2496,6 @@ Prefab:
     - target: {fileID: 4691640342142856, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1277383034564186, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
-      propertyPath: m_Name
-      value: couch (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
@@ -3152,30 +3124,6 @@ Prefab:
     - target: {fileID: 4691640342142856, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1277383034564186, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
-      propertyPath: m_Name
-      value: couch (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4691640342142856, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4691640342142856, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4691640342142856, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.43916047
-      objectReference: {fileID: 0}
-    - target: {fileID: 4691640342142856, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.43916023
-      objectReference: {fileID: 0}
-    - target: {fileID: 4691640342142856, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.43916023
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 768620a3f79031f42aeae0e87c506374, type: 2}
@@ -5744,7 +5692,7 @@ Prefab:
     - target: {fileID: 224560241455290922, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -80.00002
+      value: -372.69995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65b788b3a17eabd44bb834f5b44ec3d5, type: 2}
