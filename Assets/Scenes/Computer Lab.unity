@@ -3431,6 +3431,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1802984917478020, guid: 55c8d65d416a6ac4bbf5e0232ca5e87b, type: 2}
+      propertyPath: m_Name
+      value: Phone
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55c8d65d416a6ac4bbf5e0232ca5e87b, type: 2}
   m_IsPrefabParent: 0
@@ -5501,6 +5505,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1831387435067282, guid: a9f9120475ed35c419e7c9d582de93e0, type: 2}
+      propertyPath: m_Name
+      value: Gun
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a9f9120475ed35c419e7c9d582de93e0, type: 2}
   m_IsPrefabParent: 0
@@ -5743,7 +5751,7 @@ Prefab:
     - target: {fileID: 224560241455290922, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -372.69995
+      value: -495.69995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65b788b3a17eabd44bb834f5b44ec3d5, type: 2}

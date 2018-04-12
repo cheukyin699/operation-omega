@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23833092929786814}
   - component: {fileID: 65085456419396994}
   m_Layer: 0
-  m_Name: Couch
+  m_Name: couch
   m_TagString: Lookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

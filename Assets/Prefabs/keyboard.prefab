@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33704798523158182}
   - component: {fileID: 23622284483379184}
   m_Layer: 0
-  m_Name: Keyboard
+  m_Name: keyboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
