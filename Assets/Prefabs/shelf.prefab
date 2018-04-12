@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23841497667769648}
   - component: {fileID: 65349154144790878}
   m_Layer: 0
-  m_Name: shelf
+  m_Name: Shelf
   m_TagString: Lookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
