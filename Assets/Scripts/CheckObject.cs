@@ -172,7 +172,6 @@ public class CheckObject : MonoBehaviour
             case "autopsy":
             case "phone":
                 // Images are grouped together
-                // TODO
                 m_HUD.SetImage (data);
                 m_HUD.DisplayImage (true);
 
@@ -213,8 +212,7 @@ public class CheckObject : MonoBehaviour
         player.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;
 
         // Set the video to play
-        // FIXME Set the correct video to play
-        var vid = Resources.Load ("TestVid") as UnityEngine.Video.VideoClip;
+        var vid = Resources.Load ("Recording") as UnityEngine.Video.VideoClip;
         player.clip = vid;
 
         // No looping
@@ -242,7 +240,6 @@ public class CheckObject : MonoBehaviour
     }
 
     // When you click, you check the object on your cursor
-    // TODO use a kinect
     void HandleClick ()
     {
         if (HasSelected () && !HasActiveDialog ()) {

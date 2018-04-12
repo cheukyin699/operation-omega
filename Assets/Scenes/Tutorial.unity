@@ -861,6 +861,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
+      propertyPath: m_Name
+      value: Cubby
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
   m_IsPrefabParent: 0
@@ -953,6 +957,10 @@ Prefab:
     - target: {fileID: 4141934410377724, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
+      propertyPath: m_Name
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -1484,6 +1492,10 @@ Prefab:
     - target: {fileID: 4141934410377724, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
+      propertyPath: m_Name
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -2349,6 +2361,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
+      propertyPath: m_Name
+      value: Cubby
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
   m_IsPrefabParent: 0
@@ -2972,6 +2988,10 @@ Prefab:
     - target: {fileID: 4141934410377724, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
+      propertyPath: m_Name
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -3860,6 +3880,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
+      propertyPath: m_Name
+      value: Cubby
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
   m_IsPrefabParent: 0
@@ -4287,6 +4311,10 @@ Prefab:
     - target: {fileID: 4141934410377724, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
+      propertyPath: m_Name
+      value: Cubby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
@@ -5073,6 +5101,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1765537065113528, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
+      propertyPath: m_Name
+      value: Cubby
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79afdb3904aebd44ab537bd186bfe89f, type: 2}
   m_IsPrefabParent: 0
@@ -5676,7 +5708,7 @@ Prefab:
     - target: {fileID: 224560241455290922, guid: 65b788b3a17eabd44bb834f5b44ec3d5,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -372.69995
+      value: -495.69995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65b788b3a17eabd44bb834f5b44ec3d5, type: 2}
